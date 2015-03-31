@@ -9,9 +9,20 @@
 #import <Foundation/Foundation.h>
 
 int main(int argc, const char * argv[]) {
-    @autoreleasepool {
-        // insert code here...
-        NSLog(@"Hello, World!");
+    @autoreleasepool{
+        int i=0;
+        bool done=false;
+        
+        while (i<0&&i>100){
+            if(i %2 !=0){
+            done =true;
+        }
+        NSLog (@"%i",i);
+        
+        i++;
+        
+    }
+      
     }
     return 0;
 }
