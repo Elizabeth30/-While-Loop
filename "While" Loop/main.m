@@ -13,16 +13,20 @@ int main(int argc, const char * argv[]) {
         int i=0;
         bool done=false;
         
-        while (i<0&&i>100){
-            if(i %2 !=0){
-            done =true;
+        
+        while (!done)
+        {
+            if (i>=1000) {
+                done=true;
+            }
+            NSLog (@"Hello World");
+            i++;
         }
-        NSLog (@"%i",i);
         
-        i++;
+    
         
-    }
-      
+    
+
     }
     return 0;
 }
